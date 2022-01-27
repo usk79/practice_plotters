@@ -17,7 +17,7 @@ const SIMTIME: f64 = 1000.0;   // シミュレーション時間[s]
 const SIMLENGTH: usize = (SIMTIME / CTRLCYCLE) as usize; // シミュレーション配列サイズ
 const SPEED_AVE: f64 = 1.0; // 平均車速 [m/s]
 const SIGMA2_SPD: f64 = 0.1; // 車速の分散
-const SIGMA2_SPDSENS: f64 = 1.0; // 速度センサの観測ノイズの分散
+const SIGMA2_SPDSENS: f64 = 1.0; // 速度センサの観測ノイズの分散 test
 
 fn vehicle_simulation() {
     let mut x_true = TimeSeries::new(CTRLCYCLE, SIMTIME, 0.0);
